@@ -1,0 +1,70 @@
+* {
+    font-family: "Epilogue", sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  body{
+    
+    display: grid;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    grid-area: nav;
+  }
+
+  .logos-section{
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logos-section > ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .logos-section > ul > li{
+    font-size: 12px;
+  }
+
+  .cta-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .cta-btns > li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .mobile-nav{
+    display: none;
+  }
+
+
+
+  main{
+    grid-area: main;
+  }
+
+  .attribution{
+    grid-area: footer;
+  }
