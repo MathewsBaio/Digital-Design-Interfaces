@@ -1,0 +1,134 @@
+/*
+Esquema: Monocromático
+Paleta de cores: #292929 #050c68 #0b3fb7 #A8A4A0 #FFF
+
+Objetivo do site: trazer artigos e notícias a respeito do mundo dos games
+
+Objetivo das cores: Por ser um site de leitura, o azul foi escolhido como cor de destaque devido às suas características que tendem transmitir calma
+ao usuário, além de uma sensação de segurança, ajudando a contribuir com a credibilidade do conteúdo do site. O fundo preto e a fonte branca, caracterizando o dark mode, foi escolhido por trazer uma aparência mais moderna, o que combina com o tema relacionado à tecnologia, e também por ser uma configuração que se mantém confortável durante o dia para a leitura, mas que é indispensável durante à noite para grande parte dos usuários. 
+
+*/
+@media (min-width: 768px) {
+    article{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 30px;
+        grid-template-areas: 
+        "header header"
+        "par1 banner"
+        "par2 print"
+        "par3 gameplay"
+        "footer footer";
+    }
+
+    header{
+        padding-left: 30px;
+    }
+    
+    .banner{
+        margin: 50px;
+    
+    }
+    
+    .par-1{
+        margin-top: 130px;
+        
+    }
+    
+    .par-2{
+        margin-top: 50px;
+    }
+    
+    .print{
+        margin-top: 40px;
+    }
+    
+    
+    .gameplay{
+        margin-top: 65px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
+        grid-template-areas: 
+        "header"
+        "par1"
+        "banner"
+        "par2"
+        "print"
+        "par3"
+        "gameplay"
+        "footer";
+    }
+}
+
+
+body{
+    color: #FFF;
+    background-color: #292929;
+    margin: 0;
+}
+
+header{
+    background-color: #050c68;
+    grid-area: header;
+    padding: 1px;
+    padding-left: 30px;
+}
+
+.banner{
+    text-align: center;
+    grid-area: banner;
+
+}
+
+.par-1{
+    grid-area: par1;
+    padding-left: 30px;
+}
+
+.par-2{
+    grid-area: par2;
+    padding-left: 30px;
+}
+
+.print{
+    text-align: center;
+    grid-area: print;
+}
+
+.par-3{
+    grid-area: par3;
+    padding-left: 30px;
+}
+
+.gameplay{
+    text-align: center;
+    grid-area: gameplay;
+}
+
+footer{
+    grid-area: footer;
+    padding-left: 30px;
+}
+
+h1{
+    color: #FFF;
+}
+
+#sub{
+    color: #A8A4A0;
+}
+
+h2{
+    color: #0b3fb7;
+}
+
+a{
+    color: #0b3fb7;
+}

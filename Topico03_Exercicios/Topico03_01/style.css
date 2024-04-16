@@ -1,0 +1,42 @@
+*{
+    font-family: Arial;
+}
+
+h1{
+    text-align: center;
+}
+
+.carro{
+    background-color: #111;
+    margin: 25px;
+    padding: 10px;
+    color: white;
+}
+
+.bicicleta{
+    background-color: #111;
+    margin: 25px;
+    padding: 10px;
+    color: white;
+}
+
+.yellow{
+    display: inline;
+    color: #febe01;
+}
+
+.grey{
+    color: #b2b2b2;
+}
+
+a{
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    margin: 10px 0px 10px 0px;
+    width: 135px;
+    height: 30px;
+    text-decoration: none;
+    color: #332200;
+    background-color: #febe01;
+}
