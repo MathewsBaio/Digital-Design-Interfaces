@@ -32,3 +32,20 @@ h3 {
 
 }
 
+time {
+    font: 700 1.5rem 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    padding: 12px 0;
+
+    display: block;
+}
+
+time > sup {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
