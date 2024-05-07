@@ -49,3 +49,17 @@ time > sup {
     font-weight: 500;
 }
 
+blockquote {
+    font: 1.8rem/1.25 'Oswald', sans-serif;
+    margin: 1.5rem 2rem;
+}
+
+blockquote::before {
+    content: open-quote;
+
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
