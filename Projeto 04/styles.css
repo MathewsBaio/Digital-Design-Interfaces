@@ -10,5 +10,10 @@ body{
 
 h1{
     font-family: 'Oswald', sans-serif;
+    font-size:  4rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
 }
 
