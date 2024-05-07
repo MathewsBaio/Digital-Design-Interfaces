@@ -63,3 +63,13 @@ blockquote::after {
     content: close-quote;
 }
 
+@counter-style emoji {
+    symbols: "\2615";
+    system: cyclic;
+    suffix: " ";
+}
+
+article > ul {
+    list-style: emoji;
+}
+
