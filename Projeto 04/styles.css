@@ -98,4 +98,8 @@ figcaption {
     blockquote {
         column-span: all;
     }
+
+    figure {
+        break-inside: avoid;
+    }
 }
