@@ -102,4 +102,9 @@ figcaption {
     figure {
         break-inside: avoid;
     }
+
+    p {
+        text-align: justify;
+        hyphens: auto;
+    }
 }
