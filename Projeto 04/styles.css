@@ -77,3 +77,18 @@ article > ul {
 img {
     filter: grayscale(100);
 }
+
+figure {
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 955px) {
+    article {
+        column-count: 3;
+    }
+}
