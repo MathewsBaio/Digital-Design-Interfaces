@@ -4,10 +4,18 @@ Paleta de cores: #292929 #050c68 #0b3fb7 #A8A4A0 #FFF
 
 Objetivo do site: trazer artigos e notícias a respeito do mundo dos games
 
-Objetivo das cores: Por ser um site de leitura, o azul foi escolhido como cor de destaque devido às suas características que tendem transmitir calma
-ao usuário, além de uma sensação de segurança, ajudando a contribuir com a credibilidade do conteúdo do site. O fundo preto e a fonte branca, caracterizando o dark mode, foi escolhido por trazer uma aparência mais moderna, o que combina com o tema relacionado à tecnologia, e também por ser uma configuração que se mantém confortável durante o dia para a leitura, mas que é indispensável durante à noite para grande parte dos usuários. 
+Objetivo das fontes: Por ser um site de notícias a respeito de temas leves, foi escolhidas fontes sem serifa para trazer essa sensação de leveza. 
 
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
 @media (min-width: 768px) {
     article{
         display: grid;
@@ -72,6 +80,7 @@ body{
     color: #FFF;
     background-color: #292929;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header{
@@ -118,6 +127,7 @@ footer{
 }
 
 h1{
+    font-family: 'Fira Sans', sans-serif;
     color: #FFF;
 }
 
@@ -126,9 +136,11 @@ h1{
 }
 
 h2{
+    font-family: 'Fira Sans', sans-serif;
     color: #0b3fb7;
 }
 
 a{
+    font-family: 'Fira Sans', sans-serif;
     color: #0b3fb7;
 }
