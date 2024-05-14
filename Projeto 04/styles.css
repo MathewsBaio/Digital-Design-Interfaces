@@ -73,3 +73,7 @@ article > ul {
     list-style: emoji;
 }
 
+
+img {
+    filter: grayscale(100);
+}
