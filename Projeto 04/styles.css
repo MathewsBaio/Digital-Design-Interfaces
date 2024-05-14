@@ -94,4 +94,8 @@ figcaption {
         column-gap: 42px;
         margin-top: 36px;
     }
+
+    blockquote {
+        column-span: all;
+    }
 }
