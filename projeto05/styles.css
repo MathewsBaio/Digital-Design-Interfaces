@@ -42,3 +42,13 @@ rect:nth-child(8) { fill: #1ca48d }
 rect:nth-child(9) { fill: #17968b }
 rect:nth-child(10) { fill: #128688 }
 rect:nth-child(11) { fill: #128688 }
+
+@keyframes doScale {
+  
+  from{transform: scaleY(1);}
+  50%{transform: scaleY(0.2);}
+  to{transform: scaleY(1);}
+  
+}
+
+
