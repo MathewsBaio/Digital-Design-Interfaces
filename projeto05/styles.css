@@ -51,4 +51,9 @@ rect:nth-child(11) { fill: #128688 }
   
 }
 
+rect {
+  animation-name: doScale;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+}
 
