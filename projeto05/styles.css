@@ -142,7 +142,27 @@ progress {
 
 ::-webkit-progress-bar {
   border-radius: 20px;
-  
+  background-color: #4db3ff;
+  background: linear-gradient(to right, #128688 0%,#4db3ff 100%);
+}
+
+::-webkit-progress-inner-element {
+  border-radius: 20px;
+}
+
+::-moz-progress-value {
+  border-radius: 20px;
+  background-color: #7be6e8;
+}
+
+::-moz-progress-bar {
+  border-radius: 20px;
+  background-color: #4db3ff;
+  background: linear-gradient(to right, #128688 0%,#4db3ff 100%);
+}
+
+::-moz-progress-inner-element {
+  border-radius: 20px;
 }
 
 
