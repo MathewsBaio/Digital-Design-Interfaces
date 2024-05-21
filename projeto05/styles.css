@@ -125,6 +125,24 @@ progress {
   width: 100%;
   accent-color: #128688;
 
+  border-radius: 20px;
+  background-color: #7be6e8;
+  
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+::-webkit-progress-value {
+  border-radius: 20px;
+  background-color: #7be6e8;
+}
+
+::-webkit-progress-bar {
+  border-radius: 20px;
+  
 }
 
 
