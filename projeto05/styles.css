@@ -35,7 +35,7 @@ rect:nth-child(1) {
 
   fill: #1a9f8c;
   animation-delay: 0ms;
-  
+
  }
 rect:nth-child(2) { 
 
@@ -110,5 +110,6 @@ rect {
   animation-name: doScale;
   animation-duration: 2.2s;
   animation-iteration-count: infinite;
+  transform-origin: center;
 }
 
