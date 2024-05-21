@@ -2,6 +2,10 @@ body {
   background: #001c2e;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  rect {animation: none;}
+}
+
 /* Container for the loader */
 section {
   /* Layout */
@@ -107,13 +111,21 @@ rect:nth-child(11) {
 }
 
 rect {
+
   animation-name: doScale;
   animation-duration: 2.2s;
   animation-iteration-count: infinite;
   transform-origin: center;
+
 }
 
-@media (prefers-reduced-motion: reduce) {
-  rect {animation: none;}
+progress {
+
+  height: 24px;
+  width: 100%;
+  accent-color: #128688;
+
 }
+
+
 
