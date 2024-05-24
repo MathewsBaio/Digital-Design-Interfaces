@@ -122,7 +122,23 @@ header {
     top: 5px;
 }
 
+.side-menu {
+    display: none;
+}
 
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
 
 
 
