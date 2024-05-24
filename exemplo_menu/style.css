@@ -82,6 +82,20 @@ header {
 
 }
 
+.hamb {
 
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+
+}
+
+.hamb-line {
+    background-color: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
 
 
