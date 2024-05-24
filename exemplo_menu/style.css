@@ -91,11 +91,38 @@ header {
 }
 
 .hamb-line {
+
     background-color: var(--white);
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
+
 }
+
+.hamb-line::after,
+.hamb-line::before {
+
+    background-color: var(--white);
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+}
+
+
+.hamb-line::before {
+    top: -5px;
+}
+
+.hamb-line::after {
+    top: 5px;
+}
+
+
+
 
 
