@@ -140,6 +140,21 @@ header {
     top: 0;
 }
 
+.subnavcontent {
+    background-color: var(--white);
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+    display: none;
+
+}
+
+.subvame-content a {
+    color: var(--black);
+    width: 100%;
+    
+}
+
 @media (min-width: 768px) {
     
     .nav {
@@ -165,6 +180,17 @@ header {
     .hamb {
         display: none;
     }
+
+    .subnavcontent {
+        padding: 20px 0;
+        display: none;
+        background-color: var(--black);
+    }
+
+    .subnavcontent a {
+        color: var(--white);
+    }
+
 
 }
 
