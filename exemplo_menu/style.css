@@ -1,197 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root {
-
+:root{
     --white: #f9f9f9;
     --black: #38383f;
     --gray: #85888c;
-
 }
 
-/* reset */
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-body {
-
+body{
     background-color: var(--white);
-    font-family: 'Poppins', sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
 
-a {
-
+a{
     text-decoration: none;
-
 }
 
-ul {
-
+ul{
     list-style: none;
-
 }
 
-header {
-
+header{
     background-color: var(--black);
-    color: var(--white);
     box-shadow: 1px 1px 5px 0 var(--gray);
-
+    color: var(--white);
     position: sticky;
     top: 0;
     width: 100%;
-
 }
 
-.logo {
-
+.logo{
     display: inline-block;
     color: var(--white);
     font-size: 3.75rem;
     margin-left: 10px;
-
 }
 
-.nav {
-    
+.nav{
     width: 100%;
     height: 100%;
     position: fixed;
     background-color: var(--black);
     overflow: hidden;
-
-
 }
 
-.menu a {
-
+.menu a, .subnavbtn{
     display: block;
     padding: 30px;
     color: var(--white);
-
 }
 
-.menu a:hover {
-
+.menu a:hover{
     background-color: var(--gray);
-
 }
-
-.hamb {
-
+.nav{
+    max-height: 0;
+    transition: max-height 1s ease-out;
+}
+.hamb{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
-
 }
 
-.hamb-line {
-
+.hamb-line{
     background-color: var(--white);
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
-
 }
 
-.hamb-line::after,
-.hamb-line::before {
-
+.hamb-line::after, 
+.hamb-line::before{
     background-color: var(--white);
-    content: '';
     display: block;
-    height: 2px;
+    content: '';
+    height: 100%;
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
-
 }
 
-
-.hamb-line::before {
-    top: -5px;
-}
-
-.hamb-line::after {
+.hamb-line::before{
     top: 5px;
 }
 
-.side-menu {
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu{
     display: none;
 }
 
-.side-menu:checked ~ nav {
+.side-menu:checked ~ nav{
     max-height: 100%;
 }
 
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top: 0;
+.side-menu:checked ~ .hamb .hamb-line{
+    background: transparent;
 }
 
-.side-menu:checked ~ .hamb .hamb-line::before {
+.side-menu:checked ~ .hamb .hamb-line::before{
     transform: rotate(-45deg);
     top: 0;
 }
 
-.subnavcontent {
+.side-menu:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.subnav-content{
     background-color: var(--white);
     width: 100%;
     z-index: 1;
     padding: 20px 0;
     display: none;
-
 }
 
-.subvame-content a {
+.subnav{
+    position: relative;
+}
+.subnav-content a{
     color: var(--black);
-    width: 100%;
-    
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.subnav:hover .subnav-content{
+    display: block;
 }
 
 @media (min-width: 768px) {
-    
-    .nav {
-
+    .nav{
         max-height: none;
-        top: 0;
         position: relative;
+        top: 0;
         float: right;
         width: fit-content;
         background-color: transparent;
-
     }
 
-    .menu li {
+    .menu li{
         float: left;
     }
 
-    .menu a:hover {
-        background-color: transparent;
+    .menu a:hover{
+        background: transparent;
         color: var(--gray);
     }
 
-    .hamb {
+    .hamb{
         display: none;
     }
 
-    .subnavcontent {
+    .subnav-content{
         padding: 20px 0;
         display: none;
         background-color: var(--black);
     }
 
-    .subnavcontent a {
+    .subnav-content a{
         color: var(--white);
     }
-
-
+    
 }
-
 
