@@ -56,8 +56,34 @@ Layout Mobile (1.5pt)
 O aluno deverá utilizar as técnicas aprendidas para replicar o layout modelo (arquivo mobile.png) de acordo com os elementos apresentados, crie um media query com breakpoint em 500px.
 */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
+    .container.flex{
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "itemA"
+        "itemB";
+        
+    }
+
+    .grid-item-1 {
+        grid-area: itemA;
+        
+        
+    }
+    
+    .grid-item-2 {
+        grid-area: itemB;
+    }
 
     
 }
@@ -68,6 +94,8 @@ O aluno deverá utilizar as técnicas aprendidas para replicar o layout modelo (
 Com base no modelo desktop  (arquivo desktop.png) o aluno deverá responder as seguintes perguntas como comentários no arquivo css:
 
 a) Avalie o modelo com base no conceito de layout, especifique e justifique o conceito de equilíbrio. 
+
+Assimétrico
 
 b) Avalie o modelo com base no conceito de layout, especifique e justifique o conceito de ritmo. 
 
