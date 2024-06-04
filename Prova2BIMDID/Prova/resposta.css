@@ -58,11 +58,16 @@ O aluno deverá utilizar as técnicas aprendidas para replicar o layout modelo (
 
 @media (max-width: 600px) {
 
+    .navbar {
+        width: 100vw;
+    }
+
     .container.flex{
         display: flex;
         flex-direction: column;
-        align-items: space-around;
+        align-items: none;
         justify-content: center;
+        width: 100vw;
     }
 
     .grid {
@@ -84,6 +89,26 @@ O aluno deverá utilizar as técnicas aprendidas para replicar o layout modelo (
     .grid-item-2 {
         grid-area: itemB;
     }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .stats {
+        max-width: 450px;
+    }
+
+    .testimonial.grid-3 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        
+    
+    }
+    
 
     
 }
