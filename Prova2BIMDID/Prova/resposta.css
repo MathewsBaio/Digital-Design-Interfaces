@@ -3,12 +3,64 @@ O aluno deverá utilizar as técnicas de css grid e flexbox para replicar o layo
 
 */
 
+.container.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "itemA itemB";
+}
+
+.grid-item-1 {
+    grid-area: itemA;
+    
+    
+}
+
+.grid-item-2 {
+    grid-area: itemB;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex.stat {
+    display: flex;
+}
+
+.testimonial.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    
+
+}
+
 
 
 /*
 Layout Mobile (1.5pt)
 O aluno deverá utilizar as técnicas aprendidas para replicar o layout modelo (arquivo mobile.png) de acordo com os elementos apresentados, crie um media query com breakpoint em 500px.
 */
+
+@media (max-width: 768px) {
+
+
+    
+}
 
 
 
